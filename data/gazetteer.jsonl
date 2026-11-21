@@ -1,0 +1,7 @@
+{"id": "g1", "place": "br-old", "name": "新桥", "district": "上坪", "landmarks": ["旧学校", "南沟"], "valid": [1936, 1966], "relation": "工务图原址", "evidence": "v1:1:a"}
+{"id": "g2", "place": "br-old", "name": "通学桥", "district": "上坪", "landmarks": ["旧学校", "南沟"], "valid": [1967, 1994], "relation": "改名", "evidence": "v1:2:a"}
+{"id": "g3", "place": "br-east", "name": "新桥", "district": "下渡", "landmarks": ["渔校", "港沟"], "valid": [1956, 2005], "relation": "另一座同名桥", "evidence": "v2:1:a"}
+{"id": "g4", "place": "rd-west", "name": "新桥路", "district": "上坪", "landmarks": ["旧小学", "制砖场"], "valid": [1970, 1986], "relation": "旧段", "evidence": "v3:3:a"}
+{"id": "g5", "place": "rd-east", "name": "新桥路", "district": "上坪", "landmarks": ["新学校", "电厂"], "valid": [1985, 2026], "relation": "东延更名", "evidence": "v3:4:a"}
+{"id": "g6", "place": "br-east", "name": "过水桥", "district": "下渡", "landmarks": ["旧小学"], "valid": [1971, 1974], "relation": "馆内释读", "evidence": "v2:2:secret"}
+{"id": "g7", "place": "br-old", "name": "新桥", "district": "上坪", "landmarks": ["旧小学"], "valid": [1958, 1964], "relation": "校舍曾借用", "evidence": "v1:1:b"}

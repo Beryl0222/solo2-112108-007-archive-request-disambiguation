@@ -1,0 +1,35 @@
+{
+  "gazetteer": [
+    "id",
+    "place",
+    "name",
+    "district",
+    "landmarks",
+    "valid",
+    "relation",
+    "evidence"
+  ],
+  "pages": [
+    "vol",
+    "page",
+    "revision",
+    "segments"
+  ],
+  "permissions": [
+    "id",
+    "reader",
+    "purpose",
+    "scope",
+    "starts_at",
+    "expires_at",
+    "mask_terms"
+  ],
+  "requests": [
+    "id",
+    "reader",
+    "purpose",
+    "at",
+    "previous",
+    "text"
+  ]
+}

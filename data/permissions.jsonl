@@ -1,0 +1,3 @@
+{"id": "p1", "reader": "visitor10", "purpose": "校史", "scope": "v2:2:secret", "starts_at": "2026-11-23T09:00:00+08:00", "expires_at": "2026-11-23T12:00:00+08:00", "mask_terms": ["新九号", "甲二"]}
+{"id": "p2", "reader": "staff7", "purpose": "馆内核对", "scope": "v2", "starts_at": "2026-11-22T00:00:00+08:00", "expires_at": "2026-12-22T00:00:00+08:00", "mask_terms": []}
+{"id": "p3", "reader": "visitor10", "purpose": "校史", "scope": "v1:2", "starts_at": "2026-11-22T00:00:00+08:00", "expires_at": "2026-12-01T00:00:00+08:00", "mask_terms": ["何守桥二子"]}
