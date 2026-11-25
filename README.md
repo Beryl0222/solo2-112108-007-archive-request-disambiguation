@@ -10,3 +10,32 @@
 python3 read_materials.py
 python3 -m unittest discover -s tests -v
 ```
+
+## 查阅工具
+
+`placename_lookup` 把来访记录辨读为线索（年代、相对地标、旧名），在当次身份
+可见的资料内给出候选、追问或限域摘录，并把补充条件与审批引用写入会话记录。
+
+```sh
+# 按时间顺序处理来访记录（x1–x6），会话记录写入 --log
+python3 -m placename_lookup --data data --log var/session_log.jsonl run
+
+# 单条临时来访
+python3 -m placename_lookup ask --reader visitor2 --purpose 文史 \
+    --at 2026-11-23T09:30:00+08:00 --text "查过水桥。"
+
+# 有权人员复核当次用了哪版文字和地名证据
+python3 -m placename_lookup --log var/session_log.jsonl review \
+    --request-id x2 --reviewer staff7 --at 2026-11-24T09:00:00+08:00
+```
+
+- 同址改名、名称转移与同名异地按地名依据自动区分，候选均附可核对的条目理由。
+- 几种解释会改变调卷或审批范围时，只问一个能实质排除歧义的问题；追问、数量
+  与候选理由只取自当次身份可见的资料，受限页不改变未获审批读者看到的有无、
+  候选顺序与追问。
+- 摘录按卷、页、段与读者、用途核验审批；只有一处需要遮盖时保留能单独读懂的
+  公开部分，其余情形（遮盖点分散、保留句把过往写成当前、借简称再暴露受限
+  身份）交馆员处理，不改写原件。遮盖词本身不出现在读者输出中。
+- 审批过期或用途变化时，先前的摘录编号不能成为新的查阅许可。
+- 复核需持有覆盖当次受限位置的无遮盖有效审批；读者输出隐去以下划线开头的
+  内部字段。
